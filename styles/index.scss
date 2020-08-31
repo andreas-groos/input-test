@@ -1,0 +1,94 @@
+@import "./globals.scss";
+
+.layout-wrapper {
+  min-height: 100vh;
+  max-width: 500px;
+  margin: 0 auto;
+  background: #f7f7f0;
+  > div.layout {
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  > div.layout.fullscreen {
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem;
+  }
+}
+
+#bottom-button-wrapper {
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  button {
+    max-width: 468px; // 500px (current max-width of layout) - 2rem
+    height: 48px;
+  }
+  .transparent {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(2.71px);
+    border-radius: 2px;
+  }
+  &.non-sticky {
+    position: static;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+input {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: inherit;
+  overflow: visible;
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-weight: 400;
+  background-clip: padding-box;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  background-color: white;
+  border: none;
+  font-size: 14px;
+  color: #1d0830;
+  line-height: 21px;
+  box-shadow: none;
+  padding-left: 0;
+}
+
+button {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: inherit;
+  overflow: visible;
+  text-transform: none;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  line-height: 1.5;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  background-color: #ff696d;
+  border-color: #ff696d;
+  display: block;
+  width: 100%;
+  border-radius: 2px;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  margin-bottom: 1rem !important;
+}
