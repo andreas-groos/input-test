@@ -18,7 +18,7 @@ export default function Home() {
   console.log('isFocused', isFocused)
 
   return (
-    <Layout>
+    <Layout isFocused={isFocused}>
       <div>
         {!isFocused && (
           <div>

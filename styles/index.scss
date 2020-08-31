@@ -5,6 +5,9 @@
   max-width: 500px;
   margin: 0 auto;
   background: #f7f7f0;
+  &.no-height {
+    min-height: 0;
+  }
   > div.layout {
     margin: 0 1rem;
     display: flex;

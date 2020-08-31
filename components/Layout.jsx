@@ -17,13 +17,13 @@ const scrollToTop = () => {
   }
 };
 
-function Layout({ children, fullScreen = true, className = "" }) {
+function Layout({ children, fullScreen = true, className = "", isFocused }) {
   useEffect(() => {
     scrollToTop();
   }, []);
 
   return (
-    <div className="layout-wrapper">
+    <div className={isFocused ? "layout-wrapper no-height" : "layout-wrapper"}>
       <div className={`layout ${fullScreen ? "fullscreen" : ""} ${className}`}>
         {children}
       </div>
