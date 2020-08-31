@@ -17,7 +17,7 @@ const scrollToTop = () => {
   }
 };
 
-function Layout({ children, fullScreen = true, className = "", isFocused }) {
+function Layout({ children, fullScreen = false, className = "", isFocused }) {
   useEffect(() => {
     scrollToTop();
   }, []);
