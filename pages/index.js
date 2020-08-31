@@ -28,7 +28,7 @@ export default function Home() {
           </div>
         )}
         <input ref={inputRef} onChange={setText} type="text" />
-        <div id="bottom-button-wrapper">
+        <div id="bottom-button-wrapper" className={isFocused ? 'non-sticky' : ''}>
           <button>Keep Track</button>
           <button>Skip</button>
         </div>
