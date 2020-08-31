@@ -22,6 +22,7 @@ export default function Home() {
       <div>
         <p>Some content on top just like in Landslide</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore expedita possimus totam amet, deleniti eveniet atque inventore sit necessitatibus, quas ratione. Obcaecati facilis at aperiam corporis recusandae, placeat quia soluta?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore expedita possimus totam amet, deleniti eveniet atque inventore sit necessitatibus, quas ratione. Obcaecati facilis at aperiam corporis recusandae, placeat quia soluta?</p>
         <input ref={inputRef} onChange={setText} type="text" />
         <div id="bottom-button-wrapper">
           <button>Keep Track</button>
