@@ -9,7 +9,7 @@ export default function Home() {
   useEffect(() => {
     function handleFocus() {
       setIsFocused(true);
-      // inputRef.current.scrollIntoView(true);
+      inputRef.current.scrollIntoView(true);
     }
     inputRef.current.addEventListener("focus", () => handleFocus());
     return inputRef.current.removeEventListener("focus", () => handleFocus());
